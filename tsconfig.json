@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es2015",// 目标语言的版本
+    "useDefineForClassFields": true,// 启用 --isolatedModules useDefineForClassFields作为类字段的默认设置
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,// 允许编译 javascript 文件
+    "skipLibCheck": true,// 忽略所有的声明文件（ *.d.ts）的类型检查
+    "esModuleInterop": true,// 允许export=导出，由import from 导入
+    "strict": true,// 启用所有严格类型检查选项
+    "forceConsistentCasingInFileNames": true,// 禁止对同一个文件的不一致的引用
+    "module": "esnext",// 生成代码的模板标准
+    "moduleResolution": "bundler",// 决定如何处理模块
+    "allowImportingTsExtensions": true,// 允许导入 .ts 文件
+    "resolveJsonModule": true,// 解析 json 模块
+    "isolatedModules": true,// 将每个文件作为单独的模块 （与 'ts.transpileModule' 类似）.
+    "noUnusedLocals": true,// 报告未使用的局部变量上的错误
+    "noUnusedParameters": false,// 报告未使用的参数上的错误
+    "noEmitOnError": true,// 有错误时不生成输出文件
+    "noFallthroughCasesInSwitch": true,// 报告 switch 语句的 fallthrough 错误。（即，不允许 switch 的 case 语句贯穿）
+    "allowSyntheticDefaultImports": true,// 允许从没有设置默认导出的模块中默认导入。这并不影响代码的输出，仅为了类型检查。
+    "noEmit": true,// 不生成输出文件
+    "jsx": "react-jsx"// 指定 jsx 代码的生成方式：'preserve', 'react-jsx' 或 'react-jsxdev'
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "references": [// 指定要包含在其中的项目引用
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

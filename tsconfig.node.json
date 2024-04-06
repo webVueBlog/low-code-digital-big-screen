@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {// 这里可以添加其他配置选项
+    "composite": true,// 启用项目编译
+    "skipLibCheck": true,// 跳过声明文件的类型检查
+    "module": "ESNext",// 指定生成哪个模块系统代码
+    "moduleResolution": "bundler",// 使用打包程序的模块解析策略
+    "allowSyntheticDefaultImports": true // 允许从没有设置默认导出的模块中默认导入
+  },
+  "include": ["vite.config.ts"]/* 或者 "include": ["src"] */
+}
